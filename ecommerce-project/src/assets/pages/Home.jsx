@@ -1,13 +1,12 @@
 import ProductCart from "../components/product";
-import { getProducts } from "../data/product";
+import getProduct from "../data/product";
 import { Link } from 'react-router-dom';
 
 export default function Home() {
-    const products = getProducts();
+    const products = getProduct();
 
     return (
         <div className="page">
-            {/* Changed 'class' to 'className' below */}
             <div className="home-hero">
                 <h1 className="home-title">WELCOME TO THRILLSHOP</h1>
                 <p className="home-subtitle">Discover amazing products at great prices</p>

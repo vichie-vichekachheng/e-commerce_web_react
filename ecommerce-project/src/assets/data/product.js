@@ -72,6 +72,9 @@ const products = [
       "1080p HD webcam with auto-focus and built-in microphone. Ideal for video calls and streaming.",
   },
 ];
-export default  function getProduct(){
-        return products
+export function getProduct(){
+        return products;
+}
+export function getProbyId(id){
+  return products.find((p)=> p.id === Number(id))
 }

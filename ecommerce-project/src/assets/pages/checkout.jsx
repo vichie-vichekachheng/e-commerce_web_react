@@ -1,7 +1,7 @@
 export default function Checkout(){
     return(
         <div>
-            CheckOut Page
+            Checkout Page
         </div>
     )
 }

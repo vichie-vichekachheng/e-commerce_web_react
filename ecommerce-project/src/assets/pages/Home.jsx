@@ -1,5 +1,5 @@
 import ProductCart from "../components/product";
-import getProduct from "../data/product";
+import{ getProduct} from "../data/product";
 import { Link } from 'react-router-dom';
 
 export default function Home() {

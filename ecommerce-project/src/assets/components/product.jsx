@@ -14,7 +14,7 @@ export default function ProductCart({ product }) {
 
         <div className="product-card-actions">
           <Link
-            className="btn btn-secondary"
+            className="btn btn-secondary" to={`/products/${product.id}`}
           >
             View Details
           </Link>

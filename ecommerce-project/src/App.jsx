@@ -6,10 +6,12 @@ import Checkout from './assets/pages/checkout'
 import Navbar from './assets/components/Navbar'
 import AuthProvider from './assets/context/Authcontext';
 import ProductDetails from './assets/pages/productdetails';
+import CartProvider from './assets/context/Cartcontext';
 
 function App() {
   return (
     <AuthProvider>
+      <CartProvider >
     <div className="app">
       <Navbar />
       <Routes>
@@ -19,6 +21,7 @@ function App() {
         <Route path="/products/:id" element={<ProductDetails />}/>
       </Routes>
     </div>
+    </CartProvider>
     </AuthProvider>
   );
 }
